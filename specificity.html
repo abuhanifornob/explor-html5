@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/specificity.css">
+    <title>Specificity</title>
+
+    <style>
+        p {
+            border: 2px solid yellowgreen;
+        }
+        
+        #hed {
+            color: red;
+            background-color: rosybrown;
+        }
+        
+        .hedding_class {
+            color: aqua;
+            background-color: blue;
+        }
+        
+        h1 {
+            color: green;
+        }
+        
+        h1 {
+            color: red !important;
+        }
+        
+        h1 {
+            background-color: brown;
+        }
+        
+        h1 {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color:blue ;" id="hed" class="hedding_class">This is my Hedding-1</h1>
+    <h1 id="hed" class="hedding_class">This is my Hedding-2</h1>
+    <h1 id="hed" class="hedding_class">This is my Hedding-3</h1>
+    <h1 id="hed" class="hedding_class">This is my Hedding-4</h1>
+    <p>this is my Paragrap</p>
+    <p>this is my Paragrap</p>
+    <p>this is my Paragrap</p>
+
+</body>
+
+</html>
